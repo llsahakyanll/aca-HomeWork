@@ -331,7 +331,7 @@ public class Main {
 
 //    ----------------------------| HomeWork Task 8 |--------------------------------------------------------------
 
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         String s = input.next();
         int parseInt = s.length();
         int sum = 0;
@@ -341,7 +341,7 @@ public class Main {
         }
         i = i - 1;
         float result = sum / i;
-        System.out.println(result);
+        System.out.println(result);*/
 
 //    ----------------------------| End HomeWork Task 8 |----------------------------------------------------------
 
