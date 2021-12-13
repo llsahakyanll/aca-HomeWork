@@ -321,6 +321,7 @@ public class Main {
         System.out.print("Please Your year of birth : ");
         int number = input.nextInt();
         System.out.println(s +" "+number);*/
+
 //    ----------------------------| End HomeWork Task 6 |----------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 7 |----------------------------------------------------------
@@ -343,7 +344,13 @@ public class Main {
         float result = sum / i;
         System.out.println(result);*/
 
-//    ----------------------------| End HomeWork Task 8 |----------------------------------------------------------
+
+//    ----------------------------| End HomeWork Task 8 |------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 12 |---------------------------------------------------------
+        /*String txt = "We are the so-called \"Vikings\" from the north.";
+        System.out.println(txt);*/
+//    ----------------------------| END HomeWork Task 12 |-----------------------------------------------------
 
 //    ----------------------------| HomeWork Task Test |-------------------------------------------------------
         /* 1) Which data type would you use to represent the following values?
