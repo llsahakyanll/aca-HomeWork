@@ -3,6 +3,8 @@ package com.aca;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -270,6 +272,78 @@ public class Main {
         System.out.println("Float is : "+a+ "\nDouble is : "+b);
         //------------| End Task 1 -- 5 |----------------------*/
 //    ----------------------------| End HomeWork Task 1 |------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 3 |----------------------------------------------------------
+        /*Scanner input = new Scanner(System.in);
+        System.out.print("Input a degree in Fahrenheit: ");
+        double fahrenheit = input.nextDouble();
+        double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0);
+        System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");*/
+//    ----------------------------| End HomeWork Task 3 |------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 3 |----------------------------------------------------------
+        /*//----------| Task 3 -- 1 |----------------------
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input a degree in Fahrenheit: ");
+        double fahrenheit = input.nextDouble();
+        double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0);
+        System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
+        //----------| End Task 3 -- 1 |----------------------*/
+
+        /*//----------| Task 3 -- 2 |----------------------
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input a degree in Fahrenheit: ");
+        double fahrenheit = input.nextFloat();
+        float  celsius =(( 5f *((float)fahrenheit - 32.0f)) / 9.0f);
+        System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
+        //----------| End Task 4 -- 2 |----------------------*/
+
+        /*//----------| Task 3 -- 3 |----------------------
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input a degree in Fahrenheit: ");
+        double fahrenheit = input.nextFloat();
+        int  celsius =(( 5 *((int)fahrenheit - 32)) / 9);
+        System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
+        //----------| End Task 4 -- 3 |----------------------*/
+//    ----------------------------| End HomeWork Task 3 |------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 5 |----------------------------------------------------------
+        /*double result1 = 1/3;
+        float result2 = 1/3;
+        System.out.println(result1 + "\n" + result2);*/
+
+//    ----------------------------| End HomeWork Task 5 |----------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 6 |----------------------------------------------------------
+        /*Scanner input = new Scanner(System.in);
+        System.out.print("Please Your Name : ");
+        String s = input.next();
+        System.out.print("Please Your year of birth : ");
+        int number = input.nextInt();
+        System.out.println(s +" "+number);*/
+//    ----------------------------| End HomeWork Task 6 |----------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 7 |----------------------------------------------------------
+        /*char x = 'a';
+        int a = x;
+        System.out.println(x+"\n"+a);*/
+//    ----------------------------| End HomeWork Task 7 |----------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 8 |--------------------------------------------------------------
+
+        Scanner input = new Scanner(System.in);
+        String s = input.next();
+        int parseInt = s.length();
+        int sum = 0;
+        int i = 1;
+        for (i = 1; i <= parseInt; i++){
+            sum += i;
+        }
+        i = i - 1;
+        float result = sum / i;
+        System.out.println(result);
+
+//    ----------------------------| End HomeWork Task 8 |----------------------------------------------------------
 
 //    ----------------------------| HomeWork Task Test |-------------------------------------------------------
         /* 1) Which data type would you use to represent the following values?
