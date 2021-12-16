@@ -227,8 +227,6 @@ public class Main {
 //    ----------------------------|~\~\ END DAY 4 Home Work /~/~|----------------------------------------------
 
 
-
-
 //    ----------------------------|~\~\ DAY 3 Home Work /~/~|--------------------------------------------------
 
 //    ----------------------------| HomeWork Task 1 |----------------------------------------------------------
@@ -331,7 +329,6 @@ public class Main {
 //    ----------------------------| End HomeWork Task 7 |----------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 8 |--------------------------------------------------------------
-
         /*Scanner input = new Scanner(System.in);
         String s = input.next();
         int parseInt = s.length();
@@ -343,8 +340,6 @@ public class Main {
         i = i - 1;
         float result = sum / i;
         System.out.println(result);*/
-
-
 //    ----------------------------| End HomeWork Task 8 |------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 12 |---------------------------------------------------------
@@ -424,19 +419,147 @@ public class Main {
 //    ----------------------------|~\~\ END DAY 5 Home Work /~/~|----------------------------------------------
 
 //    ----------------------------| HomeWork Task 1 |---------------------------------------------------------
-        Scanner userText = new Scanner(System.in);
+        /*Scanner userText = new Scanner(System.in);
         String x = userText.nextLine();
         String y = userText.nextLine();
-        if (x == y) {
-            System.out.println(x + "\n" + y);
+        if (x == y) {                // ------------| ?? |--------------
+            System.out.println("OK!");
         } else {
-            System.out.println(x + "\n is not equal" + y);
-        }
+            System.out.println("error");
+        }*/
 //    ----------------------------| End HomeWork Task 1 |-----------------------------------------------------
 
-//    ----------------------------| HomeWork Task 2 |---------------------------------------------------------
+//    ----------------------------| Ternary Operator |---------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter First Number : ");
+        int x = scanner.nextInt();
+        System.out.print("Please Enter Second Number : ");
+        int y = scanner.nextInt();
+        System.out.print("Please Enter Third Number : ");
+        int z = scanner.nextInt();
+        String south = (x > y) && (x > z) ? "1-st Number is the biggest" : (y > x) && (y > z) ? "2-nd Number is the biggest" : (z > x) && (z > y) ? "3-rd Number is the biggest" : "All number's are equal";
+        System.out.println(south);*/
+//    ----------------------------| End Ternary Operator |-----------------------------------------------------
 
-//    ----------------------------| End HomeWork Task 2 |-----------------------------------------------------
+//    ----------------------------| HomeWork Task 10--1 |---------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Input Small letter : ");
+        char ch = scanner.nextLine().charAt(0);
+        switch(ch){
+            case 'a':
+                System.out.println(ch + " is Vowel");
+                break;
+            case 'e':
+                System.out.println(ch + " is Vowel");
+                break;
+            case 'i':
+                System.out.println(ch + " is Vowel");
+                break;
+            case 'o':
+                System.out.println(ch + " is Vowel");
+                break;
+            case 'u':
+                System.out.println(ch + " is Vowel");
+                break;
+            case 'y':
+                System.out.println(ch + " is Vowel");
+                break;
+            default:
+                System.out.println(ch + " isn't Vowel");
+                break;
+        }*/
+//    ----------------------------| End HomeWork Task 10--1 |-----------------------------------------------------
+
+//    ----------------------------| HomeWork Task 10--2 |---------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Input Number : ");
+        int x = scanner.nextInt();
+        switch (x){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+                System.out.println("Allowed");
+                break;
+            default:
+                System.out.println("Not Allowed");
+                break;
+        }*/
+//    ----------------------------| End HomeWork Task 10--2 |-----------------------------------------------------
+
+//    ----------------------------| HomeWork Task 11 |---------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Input Number : ");
+        int x = scanner.nextInt() % 2;
+        switch (x){
+            case 0:
+                System.out.println("Number is Even!");
+                break;
+            default:
+                System.out.println("Number is Odd!");
+                break;
+        }*/
+//    ----------------------------| End HomeWork Task 11 |-----------------------------------------------------
+
+//    ----------------------------| HomeWork Task 12 |---------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Input (+, -, *, /) : ");
+        String y = scanner.next();
+        System.out.print("Please Input First Number : ");
+        int a = scanner.nextInt();
+        System.out.print("Please Input Second Number : ");
+        int b = scanner.nextInt();
+        switch (y){
+            case "+":
+                System.out.println(a+b);
+                break;
+            case "-":
+                System.out.println(a-b);
+                break;
+            case "*":
+                System.out.println(a*b);
+                break;
+            case "/":
+                System.out.println(a/b);
+                break;
+            default:
+                System.out.println("Error!");
+                break;
+        }*/
+//    ----------------------------| End HomeWork Task 12 |-----------------------------------------------------
+
+//    ----------------------------| HomeWork Task 13 |---------------------------------------------------------
+
+//    ----------------------------| End HomeWork Task 13 |-----------------------------------------------------
+
+//    ----------------------------| HomeWork Task 14 |---------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Input Average Score : ");
+        int a = scanner.nextInt() / 20;
+        switch (a){
+            case 0:
+            case 1:
+                System.out.println("Your grade is F.");
+            break;
+            case 2:
+                System.out.println("Your grade is C.");
+                break;
+            case 3:
+                System.out.println("Your grade is B.");
+                break;
+            case 4:
+                System.out.println("Your grade is A.");
+                break;
+            default:
+                System.out.println("Error!");
+        }*/
+//    ----------------------------| End HomeWork Task 14 |-----------------------------------------------------
 
 //    ----------------------------|~\~\ END DAY 5 Home Work /~/~|----------------------------------------------
 
