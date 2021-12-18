@@ -1,5 +1,6 @@
 package com.aca;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Day6 {
@@ -105,6 +106,28 @@ public class Day6 {
             System.out.println(i);
         }*/
 //    ----------------------------| End HomeWork Task 12 |-------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 16 |----------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter Number From 0 to 10 : ");
+        int a = scanner.nextInt();
+        Random rand = new Random();
+        int randInt = rand.nextInt(10);
+        while (true){
+            if ( randInt == a) {
+                System.out.println("Yes, you guessed the number.");
+                break;
+            } else if (randInt < a){
+                System.out.println("Too high");
+                System.out.println("Try Again");
+                a = scanner.nextInt();
+            } else {
+                System.out.println("Too low");
+                System.out.println("Try Again");
+                a = scanner.nextInt();
+            }
+        }*/
+//    ----------------------------| End HomeWork Task 16 |-------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 17 |----------------------------------------------------------
         /*Scanner scanner = new Scanner(System.in);
