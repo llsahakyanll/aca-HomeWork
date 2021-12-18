@@ -8,6 +8,7 @@ import static java.lang.Integer.parseInt;
 public class Main {
 
     public static void main(String[] args) {
+        Day6.funcMain();
 
 /*//      ----------------------------| For Me |--------------------------
         Person Sahak = new Person();
