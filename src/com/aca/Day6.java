@@ -47,13 +47,14 @@ public class Day6 {
 //    ----------------------------| HomeWork Task 5 |----------------------------------------------------------
         /*Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        int z = 2;
-        // 2^5 == 2*2*2*2*2 == 32
-        for (int i = 0; i <= a ; i++) {
-            if ( z  > a) break;
-            System.out.println(z);
-        }*/
-//      ----| ? |----
+        for (int i = 0; i < a; i++) {
+            int temp = pow(2, i);
+            if (temp > a) {
+                break;
+            };
+            System.out.println(temp);
+
+        };*/
 //    ----------------------------| End HomeWork Task 5 |-------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 6 |----------------------------------------------------------
@@ -65,13 +66,14 @@ public class Day6 {
 //    ----------------------------| End HomeWork Task 6 |-------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 7 |----------------------------------------------------------
-        /*Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         for (int i = a; i >= 0 ; i--) {
-            if ( i % 2 == 0) {
-                System.out.println(i);
+            double x = Math.sqrt(i);
+            if (x % 2 == 0){
+                System.out.println(x);
             }
-        }*/
+        }
 //    ----------------------------| End HomeWork Task 7 |-------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 8 |----------------------------------------------------------
@@ -84,6 +86,18 @@ public class Day6 {
             }
         }*/
 //    ----------------------------| End HomeWork Task 8 |-------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 9 |------------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        for (int i = 0; i < a; i++) {
+            int temp = pow(2, i);
+            if (temp >= a) {
+                System.out.println(i);
+                break;
+            }
+        }*/
+//    ----------------------------| End HomeWork Task 9 |--------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 11 |----------------------------------------------------------
         /*Scanner scanner = new Scanner(System.in);
@@ -139,6 +153,13 @@ public class Day6 {
         System.out.println(sum);*/
 //    ----------------------------| End HomeWork Task 17 |-------------------------------------------------------
 
-//    ----------------------------|~\~\ End DAY 1 Home Work /~/~|-----------------------------------------------
+//    ----------------------------|~\~\ End DAY 6 Home Work /~/~|-----------------------------------------------
     }
+//    ----------------------------| Math.pow |--------------------------------------
+    public static int pow(int a, int b) {
+        if(b == 0){
+          return 1;
+        };
+        return a * pow(a, b -1);
+    };
 }
