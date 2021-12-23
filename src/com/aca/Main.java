@@ -9,6 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         Day6.funcMain();
+        Day7.funcMain();
 
 /*//      ----------------------------| For Me |--------------------------
         Person Sahak = new Person();

@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Day6 {
-    public static void funcMain(){
+    public static void funcMain() {
 //    ----------------------------|~\~\ DAY 1 Home Work /~/~|--------------------------------------------------
 
 //    ----------------------------| HomeWork Task 1 |----------------------------------------------------------
@@ -66,14 +66,14 @@ public class Day6 {
 //    ----------------------------| End HomeWork Task 6 |-------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 7 |----------------------------------------------------------
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         for (int i = a; i >= 0 ; i--) {
             double x = Math.sqrt(i);
             if (x % 2 == 0){
                 System.out.println(x);
             }
-        }
+        }*/
 //    ----------------------------| End HomeWork Task 7 |-------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 8 |----------------------------------------------------------
@@ -127,11 +127,11 @@ public class Day6 {
         int a = scanner.nextInt();
         Random rand = new Random();
         int randInt = rand.nextInt(10);
-        while (true){
-            if ( randInt == a) {
+        while (true) {
+            if (randInt == a) {
                 System.out.println("Yes, you guessed the number.");
                 break;
-            } else if (randInt < a){
+            } else if (randInt < a) {
                 System.out.println("Too high");
                 System.out.println("Try Again");
                 a = scanner.nextInt();
@@ -155,11 +155,15 @@ public class Day6 {
 
 //    ----------------------------|~\~\ End DAY 6 Home Work /~/~|-----------------------------------------------
     }
-//    ----------------------------| Math.pow |--------------------------------------
+
+    //    ----------------------------| Math.pow |--------------------------------------
     public static int pow(int a, int b) {
-        if(b == 0){
-          return 1;
-        };
-        return a * pow(a, b -1);
-    };
+        if (b == 0) {
+            return 1;
+        }
+        ;
+        return a * pow(a, b - 1);
+    }
+
+    ;
 }
