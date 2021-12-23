@@ -107,19 +107,37 @@ public class Day7 {
 
 //    ----------------------------| HomeWork Task 10 |---------------------------------------------------------
         /*Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-        int d = scanner.nextInt();
-        int e = scanner.nextInt();
-        int f = scanner.nextInt();
-        int g = scanner.nextInt();
-        int h = scanner.nextInt();
-        int i = scanner.nextInt();
-        int j = scanner.nextInt();
-        int sum = a+b+c+d+e+f+g+h+i+j;
-        System.out.println(sum);*/
+        String a = scanner.next();
+        String binaryString=a;
+        int decimal=Integer.parseInt(binaryString,2);
+        System.out.println(decimal);*/
 //    ----------------------------| End HomeWork Task 10 |-----------------------------------------------------
+
+//    ----------------------------| HomeWork Task 16 |---------------------------------------------------------
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        for (int i = x; i >= 0; i--) {
+            for (int j = i; j <= x; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        for (int i = 0; i <= x; i++) {
+            for (int j = i; j <= x; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        for (int j = x; j >= 0; j--) {
+            for (int i = x; i >= 0; i--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+//    ----------------------------| End HomeWork Task 16 |-----------------------------------------------------
 
     }
 }
