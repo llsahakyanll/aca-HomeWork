@@ -114,7 +114,7 @@ public class Day7 {
 //    ----------------------------| End HomeWork Task 10 |-----------------------------------------------------
 
 //    ----------------------------| HomeWork Task 16 |---------------------------------------------------------
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         for (int i = x; i >= 0; i--) {
             for (int j = i; j <= x; j++) {
@@ -135,8 +135,7 @@ public class Day7 {
                 System.out.print("*");
             }
             System.out.println();
-        }
-
+        }*/
 //    ----------------------------| End HomeWork Task 16 |-----------------------------------------------------
 
     }
