@@ -88,7 +88,7 @@ public class Day8 {
 //    ---------------| End Task 5 |-----------
 
 //    ---------------| Task 6 |---------------
-        /*Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
         System.out.print("Please Input Size of Array : ");
         int x = scanner.nextInt();
         int[] arr = new int[x];
@@ -100,9 +100,10 @@ public class Day8 {
         for (int i = 0; i < arr.length; i++) {
             if (max < arr[i]) {
                 max = arr[i];
+                System.out.println("index is : "+i);
             }
         }
-        System.out.println(max);*/
+        System.out.println("The largest is : "+max);*/
 //    ---------------| End Task 6 |-----------
 
 //    ---------------| Task 7 |---------------
@@ -131,7 +132,7 @@ public class Day8 {
         System.out.println(minNumber);*/
 //    ---------------| End Task 7 |-----------
 
-//    ---------------| Task 8
+//    ---------------| Task 8 |---------------
         /*int max = 1000;
         int min = -1000;
         int range = max - min + 1;
@@ -142,20 +143,35 @@ public class Day8 {
             array[i] = (int)(Math.random() * range) + min;
         }
 
-
-
         int minNumber = 1000;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 0) {
                 System.out.println(array[i]);
                 if (array[i] < minNumber) {
                     minNumber = array[i];
-                }
+                }//else {
+                    //minNumber = Integer.parseInt("10");
+                //}
             }
         }
         System.out.println(Arrays.toString(array));
         System.out.println(minNumber);*/
 //    ---------------| End Task 8 |-----------
+
+//    ---------------| Task 9 |---------------
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int[] arr = new int[x];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(x);
+        }
+        System.out.println(Arrays.toString(arr));
+        for (int j = arr.length -1; j >= 0; j--) {
+            System.out.println(arr[j]);
+        }
+        System.out.println(Arrays.toString(arr));
+
+//    ---------------| End Task 9 |-----------
 
 //    ---------------|~\~\ DAY 8 Home Work /~/~|---------------
     }
