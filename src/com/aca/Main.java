@@ -11,6 +11,7 @@ public class Main {
         Day6.funcMain();
         Day7.funcMain();
         Day8.funcMain();
+        Day9.funcMain();
 
 /*//      ----------------------------| For Me |--------------------------
         Person Sahak = new Person();

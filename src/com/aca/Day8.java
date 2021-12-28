@@ -186,18 +186,42 @@ public class Day8 {
         reverse(arr, arr.length);*/
 //    ---------------| End Task 9 |-----------
 
-//    ---------------| Task 10 |---------------
-        Scanner scanner = new Scanner(System.in);
+//    ---------------| Task 10 |---------------         ?
+        /*Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         int [] arr = new int[x];
+        int j = arr.length -1;
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Random().nextInt(x);
-            for (int j = arr.length - 1; j >= 0; j--) {
-                arr[i] = arr[j];
-            }
         }
         System.out.println(Arrays.toString(arr));
+        for (int i = 0; i < arr.length; i++) {
+            while (j >= 0) {
+                arr[i] = arr[j];
+                j--;
+                break;
+            }
+        }
+        for(int i=arr.length-1;i>=0;i--) {
+            System.out.print(arr[i] + "  ");
+        }
+        System.out.println();
+        System.out.println(Arrays.toString(arr));*/
 //    ---------------| End Task 10 |-----------
+
+//    ---------------| Task 11 |---------------         ?
+        /*Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int[] arr = new int[x];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(x);
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        for (int i = arr.length - 1; i >= 0 ; i--) {
+            System.out.print(arr[i] + " ");
+        }*/
+//    ---------------| End Task 11 |-----------
 
 //    ---------------|~\~\ DAY 8 Home Work /~/~|---------------
     }
