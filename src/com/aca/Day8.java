@@ -5,6 +5,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Day8 {
+     static void reverse(int a[], int n)
+    {
+        int[] b = new int[n];
+        int j = n;
+        for (int i = 0; i < n; i++) {
+            b[j - 1] = a[i];
+            j = j - 1;
+        }
+        System.out.println(Arrays.toString(b));
+    }
     public static void funcMain() {
 //    ---------------|~\~\ DAY 8 Home Work /~/~|---------------
 
@@ -62,12 +72,19 @@ public class Day8 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Random().nextInt(x);
         }
+        int maxArrNum = arr[0];
+        int mm = arr[0];
         System.out.println(Arrays.toString(arr));
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i-1] < arr[i]) {
-                System.out.println(arr[i]);
+            if (maxArrNum < arr[i]) {
+                maxArrNum = arr[i];
             }
-        }*/
+            if (maxArrNum - 1 == arr[i]){
+                mm = arr[i];
+            }
+        }
+        System.out.println(mm);
+        System.out.println(maxArrNum);*/
 //    ---------------| End Task 4 |-----------
 
 //    ---------------| Task 5 |---------------
@@ -159,20 +176,30 @@ public class Day8 {
 //    ---------------| End Task 8 |-----------
 
 //    ---------------| Task 9 |---------------
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        int[] arr = new int[x];
+        int [] arr = new int[x];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Random().nextInt(x);
         }
         System.out.println(Arrays.toString(arr));
-        for (int j = arr.length -1; j >= 0; j--) {
-            System.out.println(arr[j]);
+        reverse(arr, arr.length);*/
+//    ---------------| End Task 9 |-----------
+
+//    ---------------| Task 10 |---------------
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int [] arr = new int[x];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(x);
+            for (int j = arr.length - 1; j >= 0; j--) {
+                arr[i] = arr[j];
+            }
         }
         System.out.println(Arrays.toString(arr));
-
-//    ---------------| End Task 9 |-----------
+//    ---------------| End Task 10 |-----------
 
 //    ---------------|~\~\ DAY 8 Home Work /~/~|---------------
     }
+
 }
