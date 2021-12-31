@@ -1,5 +1,6 @@
 package com.aca;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -40,6 +41,18 @@ public class Day11 {
 //    ---------------| Task 8 |---------------
 //        System.out.println(isVowel("U"));
 //    ---------------| End Task 8 |-----------
+
+//    ---------------| Task 9 |---------------
+//        System.out.println(isTrue("1005"));
+//    ---------------| End Task 9 |-----------
+
+//    ---------------| Task 10 |---------------
+//        System.out.println(hasEight(18508));
+//    ---------------| End Task 10 |-----------
+
+//    ---------------| Task 11 |---------------
+//        System.out.println(hasEight());
+//    ---------------| End Task 11 |-----------
 
     }       //Functios!
 
@@ -129,13 +142,58 @@ public class Day11 {
 //    ---------------| End Task 8 Function |-----------
 
 //    ---------------| Task 9 Function |---------------
-        /*public static boolean isVowel(String n) {
+        /*public static boolean isTrue(String n) {
+            boolean t = false;
             int x =  Integer.parseInt(n);
             if(x > 0) {
-                for ()
+                if (n.charAt(0) == n.charAt(n.length() - 1)) {
+                    t = true;
+                }
             }
+            return t;
         }*/
 //    ---------------| End Task 9 Function |-----------
+
+//    ---------------| Task 10 Function |---------------
+        /*public static boolean hasEight(int number) {
+            boolean t = false;
+            String x = String.valueOf(number);
+            for (int i = 0; i < x.length(); i++) {
+                System.out.println(x.charAt(i));
+                if (x.charAt(i) == 56 )  { // 56 Byte == 8 --- Դեբագով եմ նայել
+                    t = true;
+                }
+            }
+            return t;
+        }*/
+//    ---------------| End Task 10 Function |-----------
+
+//    ---------------| Task 11 Function |---------------
+        /*public static int hasEight() {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Please Enter Size of Array : ");
+            int scNum = scanner.nextInt();
+            int[] arr = new int[scNum];
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Enter a positive integer (or -1 to end) : ");
+                arr[i] = scanner.nextInt();
+                if (arr[i] == -1 || arr[i] < 0) {
+                    break;
+                }
+            }
+            int sum = 0;
+            for (int i = 0; i < arr.length; i++) {
+                String str = Integer.toString(arr[i]);
+                for (int j = 0; j < str.length(); j++) {
+                    if (str.charAt(j) == 56) {
+                        int x = Integer.parseInt(str);
+                        sum += x;
+                    }
+                }
+            }
+            return sum;
+        }*/
+//    ---------------| End Task 11 Function |-----------
 
 //    ---------------|~\~\ DAY 9 Home Work /~/~|---------------
 
