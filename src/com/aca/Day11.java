@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Day11 {
     public static void funcMain() {
-//    ---------------|~\~\ DAY 10 Home Work /~/~|---------------
+//    ---------------|~\~\ DAY 11 Home Work /~/~|---------------
 
 //    ---------------| Task 1 |---------------
         /*int x = min(10,50,60,90);
@@ -53,6 +53,61 @@ public class Day11 {
 //    ---------------| Task 11 |---------------
 //        System.out.println(hasEight());
 //    ---------------| End Task 11 |-----------
+
+//    ---------------| Task 12 |---------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter Size of Array : ");
+        int x = scanner.nextInt();
+        System.out.print("Please Enter Key : ");
+        int[] arr = new int[x];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(x+1);
+        }
+        System.out.println(contains(arr,scanner.nextInt()));*/
+//    ---------------| End Task 12 |-----------
+
+//    ---------------| Task 13 |---------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter Size of Array : ");
+        int x = scanner.nextInt();
+        System.out.print("Please Enter Key : ");
+        int[] arr = new int[x];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(x+1);
+        }
+        System.out.println(search(arr,scanner.nextInt()));
+//        System.out.println(Arrays.toString(arr));*/
+//    ---------------| End Task 13 |-----------
+
+//    ---------------| Task 14 |---------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter Size of Array : ");
+        int x = scanner.nextInt();
+        int[] arr = new int[x];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(x+1);
+        }
+        System.out.println(Arrays.toString(copyOf(arr)));*/
+//    ---------------| End Task 14 |-----------
+
+//    ---------------| Task 15 |---------------
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of students: ");
+        int x = scanner.nextInt();
+        if ( x > 0) {
+            int[] arr = new int[x];
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Enter the grade for student "+ (i + 1) +": ");
+                arr[i] = scanner.nextInt();
+                if (arr[i] >= 0 && arr[i] <= 100) {
+
+                }else {
+                    break;
+                }
+            }
+            System.out.println(Student(arr));
+        }*/
+//    ---------------| End Task 15 |-----------
 
     }       //Functios!
 
@@ -177,7 +232,10 @@ public class Day11 {
             for (int i = 0; i < arr.length; i++) {
                 System.out.print("Enter a positive integer (or -1 to end) : ");
                 arr[i] = scanner.nextInt();
-                if (arr[i] == -1 || arr[i] < 0) {
+                if (arr[i] == -1){
+                    break;
+                } else if (arr[i] < 0) {
+                    System.out.println("Error!");
                     break;
                 }
             }
@@ -195,6 +253,61 @@ public class Day11 {
         }*/
 //    ---------------| End Task 11 Function |-----------
 
-//    ---------------|~\~\ DAY 9 Home Work /~/~|---------------
+//    ---------------| Task 12 Function |---------------
+        /*public static boolean contains(int[] arr, int key) {
+            boolean t = false;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] == key) {
+                    t = true;
+                }
+            }
+            return t;
+        }*/
+//    ---------------| End Task 12 Function |-----------
+
+//    ---------------| Task 13 Function |---------------
+        /*public static int search(int[] arr, int key) {
+            int z = -1;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] == key) {
+                    z = i;
+                }
+            }
+            return z;
+        }*/
+//    ---------------| End Task 13 Function |-----------
+
+//    ---------------| Task 14 Function |---------------
+        /*public static int[] copyOf(int[] arr) {
+            return arr;
+        }*/
+//    ---------------| End Task 14 Function |-----------
+
+//    ---------------| Task 15 Function |---------------
+        /*public static double Student(int[] arr) {
+            int sum = 0;
+            for (int i = 0; i < arr.length; i++) {
+                sum += arr[i];
+                if (arr[i] < 0 || arr[i] > 100) {
+                    return 0;
+                }
+            }
+            int average = sum / arr.length;
+            int min = arr[0];
+            int max = arr[0];
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                } else if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            System.out.println("The minimum is:" + min);
+            System.out.println("The maximum is:" + max);
+            return average;
+        }*/
+//    ---------------| End Task 15 Function |-----------
+
+//    ---------------|~\~\ DAY 11 Home Work /~/~|---------------
 
 }
