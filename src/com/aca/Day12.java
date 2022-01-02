@@ -74,6 +74,16 @@ public class Day12 {
 
 //    ---------------| End Task 8 |-----------
 
+//    ---------------| Task 9 |---------------
+        /*fahrenheitCelsius(32f,2);
+        fahrenheitCelsius(2,90f);*/
+//    ---------------| End Task 9 |-----------
+
+//    ---------------| Task 10 |--------------
+        /*System.out.println(reminder(9995));
+        System.out.println(reminder(9995, 2));*/
+//    ---------------| End Task 10 |----------
+
     }   //-----------| Functions ! |----------
 
 //    ---------------| FUNCTION Task 1 |-------------
@@ -98,10 +108,6 @@ public class Day12 {
             return result;
         }*/
 //    ---------------| End FUNCTION Task 2 |---------
-
-//    ---------------| FUNCTION Task 3 |-------------
-
-//    ---------------| End FUNCTION Task 3 |---------
 
 //    ---------------| FUNCTION Task 4 |-------------
         /*public static float[] func(float[] arr) {
@@ -187,11 +193,55 @@ public class Day12 {
 
 //    ---------------| FUNCTION Task 8 |-------------
 
-//    ---------------| End FUNCTION Task 9 |---------
+//    ---------------| End FUNCTION Task 8 |---------
 
 //    ---------------| FUNCTION Task 9 |-------------
+        /*public static void fahrenheitCelsius(float celsius, int choice) {
+            if (choice == 1) {
+                int x = (int) ((celsius * 9/5) + 32);
+                System.out.println( x + " fahrenheit is "+celsius+" celsius");
+            }else if (choice == 2) {
+                double x = (celsius * 9/5) + 32;
+                System.out.println( x + " fahrenheit is "+celsius +" celsius");
+            }else {
+                System.out.println("Illegal Argument");
+            }
+        }
+        public static void fahrenheitCelsius(int choice, float fahrenheit) {
+            if (choice == 1) {
+                int x = (int) ((fahrenheit - 32) * 5/9);
+                System.out.println(fahrenheit + " fahrenheit is "+ x +" celsius");
+            }else if (choice == 2) {
+                double x = (fahrenheit - 32) * 5/9;
+                System.out.println(fahrenheit + " fahrenheit is "+ x +" celsius");
+            }else {
+                System.out.println("Illegal Argument");
+            }
+        }*/
+//    ---------------| End FUNCTION Task 9 |---------
 
-//    ---------------| End FUNCTION Task 8 |---------
+//    ---------------| FUNCTION Task 10 |-------------
+        /*public static int reminder(int number) {
+            int digit = 0;
+            int sum = 0;
+            while(number > 0) {
+                digit = number % 10;
+                sum = sum + digit;
+                number = number / 10;
+            }
+            return sum;
+        }
+        public static int reminder(int number, int c) {
+            int digit = 0;
+            int sum = 0;
+            while(number > 0) {
+                digit = number % 10;
+                sum = sum + digit;
+                number = number / 10;
+            }
+            return sum / c;
+        }*/
+//    ---------------| End FUNCTION Task 10 |---------
 
 //    ---------------|~\~\ End DAY 12 Home Work /~/~|------------
 
