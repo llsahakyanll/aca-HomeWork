@@ -1,5 +1,7 @@
 package com.aca;
 
+import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Day13 {
@@ -30,8 +32,14 @@ public class Day13 {
 //    ---------------| End Task 5 |-----------
 
 //    ---------------| Task 6 |---------------
-
+        /*System.out.print("Enter a String: ");
+        String str = new Scanner(System.in).next().toLowerCase(Locale.ROOT);
+        countVowelsDigits(str);*/
 //    ---------------| End Task 6 |----------
+
+//    ---------------| Task 7 |---------------
+
+//    ---------------| End Task 7 |----------
 
     }
 
@@ -82,7 +90,29 @@ public class Day13 {
 //    ---------------| End Task 5 |----------
 
 //    ---------------| Task 6 |---------------
-
+        /*public static void countVowelsDigits(String str) {
+            int vowelNum = 0;
+            int digitNum = 0;
+            for (int i = 0; i < str.length(); i++) {
+                char ch = str.charAt(i);
+                if (Character.isDigit(ch)) {
+                    digitNum++;
+                }else {
+                    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ) {
+                        vowelNum++;
+                    }
+                }
+            }
+            double x = (vowelNum * str.length())/100.0;
+            double y = (digitNum * str.length())/100.0;
+            System.out.println("Number of vowels: "+vowelNum+ " "+x);
+            System.out.println("Number of digits: "+digitNum+ " "+y);
+        }*/
 //    ---------------| End Task 6 |----------
 
+//    ---------------| Task 7 |---------------
+
+//    ---------------| End Task 7 |----------
 }
+
+
