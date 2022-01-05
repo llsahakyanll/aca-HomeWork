@@ -6,6 +6,12 @@ import java.util.Scanner;
 
 public class Day13 {
     public static void funcMain() {
+        /*String one = "Hello";
+        String two = " World!";
+        StringBuilder stringBuilder = new StringBuilder(one);
+        stringBuilder.append(two);
+        System.out.println(stringBuilder.toString());*/
+
 //    ---------------|~\~\ DAY 13 Home Work /~/~|---------------
 
 //    ---------------| Task 1 |---------------
@@ -38,8 +44,30 @@ public class Day13 {
 //    ---------------| End Task 6 |----------
 
 //    ---------------| Task 7 |---------------
-
+        /*String x = new Scanner(System.in).next().toUpperCase(Locale.ROOT);
+        System.out.println(caesarCode(x));*/
 //    ---------------| End Task 7 |----------
+
+//    ---------------| Task 8 |--------------
+        /*String x = new Scanner(System.in).next().toLowerCase(Locale.ROOT);
+        System.out.println(palindrome(x));*/
+//    ---------------| End Task 8 |----------
+
+//    ---------------| Task 9 |--------------
+        /*System.out.print("Enter a binary string: ");
+        String x = new Scanner(System.in).next();
+        System.out.println(checkBinStr(x));*/
+//    ---------------| End Task 9 |----------
+
+//    ---------------| Task 10 |--------------
+        /*System.out.print("Enter a Hex string: ");
+        String x = new Scanner(System.in).next().toLowerCase(Locale.ROOT);
+        System.out.println(isHex(x));*/
+//    ---------------| End Task 10 |----------
+
+//    ---------------| Task 11 |--------------
+
+//    ---------------| End Task 11 |----------
 
     }
 
@@ -111,8 +139,85 @@ public class Day13 {
 //    ---------------| End Task 6 |----------
 
 //    ---------------| Task 7 |---------------
+        /*public static String caesarCode(String str) {
+            StringBuilder lastStr = new StringBuilder();
+            char x;
+            char[] letArr = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+            for (int i = 0; i < str.length(); i++) {
+                x = str.charAt(i);
+                for (int j = 0; j < letArr.length; j++) {
+                    if (str.charAt(i) == letArr[j]) {
+                        x = letArr[j + 3];
+                        lastStr.append(String.valueOf(x));
+                    }
 
+                }
+            }
+            return lastStr.toString();
+        }*/
 //    ---------------| End Task 7 |----------
+
+//    ---------------| Task 8 |---------------
+        /*public static String palindrome(String str) {
+            String lastStr = "\""+ str +"\" is a Palindrome.";
+            int length = str.length();
+            int forward = 0;
+            int backward = length - 1;
+            while (backward > forward) {
+                char forwardChar = str.charAt(forward++);
+                char backwardChar = str.charAt(backward--);
+                if (forwardChar != backwardChar) {
+                    lastStr = "\""+ str +"\" is not a Palindrome.";
+                }
+            }
+            return lastStr;
+        }*/
+//    ---------------| End Task 8 |----------
+
+//    ---------------| Task 9 |--------------
+        /*public static String checkBinStr(String str) {
+            String lastStr = "\""+ str +"\" is a binary string";
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == '0' || str.charAt(i) == '1')  {
+                } else {
+                    lastStr = "\""+ str +"\" is Not a binary string";
+                    return lastStr;
+                }
+            }
+            return lastStr;
+        }*/
+//    ---------------| End Task 9 |----------
+
+//    ---------------| Task 10 |--------------
+        /*public static String isHex(String str) {
+            String lastStr = "\""+ str +"\" is a hex string";
+            char[] charArr = {'a', 'b', 'c', 'd', 'e', 'f'};
+            for (int i = 0; i < str.length(); i++) {
+                char ch = str.charAt(i);
+                if (ch != '-') {
+                    if (Character.isDigit(ch)) {
+                        if (ch >= '0' && ch <= '9') {
+                        }else {
+                        }
+                    }else {
+                        if (ch >= 'a' && ch <= 'f') {
+                        }else {
+                            lastStr = "\""+ str +"\" is Not a hex string";
+                            return lastStr;
+                        }
+                    }
+                }else {
+                    lastStr = "\""+ str +"\" is Not a hex string";
+                    return lastStr;
+                }
+            }
+            return lastStr;
+        }*/
+//    ---------------| End Task 10 |----------
+
+//    ---------------| Task 11 |--------------
+
+//    ---------------| End Task 11 |----------
 }
 
 
