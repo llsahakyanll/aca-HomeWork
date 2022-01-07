@@ -36,6 +36,31 @@ public class Day14 {
 //    ---------------| Task 6 |---------------
         /*System.out.println(countX("xxadax"));*/
 //    ---------------| End Task 6 |-----------
+
+//    ---------------| Task 7 |---------------
+        /*System.out.println(removeX("xxadax"));*/
+//    ---------------| End Task 7 |-----------
+
+//    ---------------| Task 8 |---------------
+        /*reverse("sahakyan sahak");*/
+//    ---------------| End Task 8 |-----------
+
+//    ---------------| Task 9 |---------------
+        /*System.out.println(endX("xxhixx"));*/
+//    ---------------| End Task 9 |-----------
+
+//    ---------------| Task 10 |---------------
+        /*System.out.println(stringClean("aaavddaawq"));*/
+//    ---------------| End Task 10 |-----------
+
+//    ---------------| Task 11 |---------------
+        /*System.out.println(isPrime(57));*/
+//    ---------------| End Task 11 |-----------
+
+//    ---------------| Task 12 |---------------
+        /*Digits(12984);*/
+//    ---------------| End Task 12 |-----------
+
     }
 
 //    ---------------| Task 1 |---------------
@@ -106,9 +131,70 @@ public class Day14 {
         /*public static int removeX(String str) {
             if (str == null || str.isEmpty())
                 return 0;
-            return (str.charAt(0) == 'x' ? 1 : 0) + removeX(str.substring(1));
+            return removeX(str.substring(1));
         }*/
-    /*
-    https://github.com/ozelentok/CodingBat-Solutions/blob/master/Java/Recursion-1.java*/
 //    ---------------| End Task 7 |-----------
+
+//    ---------------| Task 8 |---------------
+        /*public static void reverse(String str) {
+        if ((str==null)||(str.length() <= 1)) {
+            System.out.println(str);
+        }
+        else {
+            System.out.print(str.charAt(str.length()-1));
+            reverse(str.substring(0,str.length()-1));
+        }
+    }*/
+//    ---------------| End Task 8 |-----------
+
+//    ---------------| Task 9 |---------------
+        /*public static String endX(String str) {
+            if (str.equals("")) {
+                return str;
+            }
+            if (str.charAt(0) == 'x') {
+                return endX(str.substring(1)) + 'x';
+            } else {
+                return str.charAt(0) + endX(str.substring(1));
+            }
+        }*/
+//    ---------------| End Task 9 |-----------
+
+//    ---------------| Task 10 |---------------
+        /*public static String stringClean(String str) {
+            if (str.length() < 2) {
+                return str;
+            }
+            if (str.charAt(0) == str.charAt(1)) {
+                return stringClean(str.substring(1));
+
+            } else {
+                return str.charAt(0) + stringClean(str.substring(1));
+            }
+        }*/
+//    ---------------| End Task 10 |-----------
+
+//    ---------------| Task 11 |---------------
+        /*public static boolean isPrime(int n) {
+            boolean t = true;
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    t = false;
+                }
+            }
+            return t;
+        }*/
+//    ---------------| End Task 11 |-----------
+
+//    ---------------| Task 12 |---------------
+        /*public static void Digits(int n) {
+            int largest = 0;
+            while (n != 0) {
+                int r = n % 10;
+                largest = Math.max(r, largest);
+                n = n / 10;
+            }
+            System.out.println(largest);
+        }*/
+//    ---------------| End Task 12 |-----------
 }
