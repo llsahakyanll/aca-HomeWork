@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class Day14 {
     public static void funcMain() {
-
 //    ---------------| Task 1 |---------------
         /*int[] arr = new int[10];
         for (int i = 0; i < arr.length; i++) {
@@ -61,6 +60,23 @@ public class Day14 {
         /*Digits(12984);*/
 //    ---------------| End Task 12 |-----------
 
+//    ---------------| Task 13 |---------------
+        /*System.out.println(numDigits("dad55589"));*/
+//    ---------------| End Task 13 |-----------
+
+//    ---------------| Task 14 |---------------
+        /*System.out.println(pairStar("aasafk52fd"));*/
+//    ---------------| End Task 14 |-----------
+
+//    ---------------| Task 15 |---------------
+        /*String str = "sahakaa";
+        System.out.println(addSimvol(str, (str.length() +1) / 2));*/
+//    ---------------| End Task 15 |-----------
+
+//    ---------------| Task 16 |---------------
+        String x = "sahak";
+        System.out.print(x + addMiroorLine(x));
+//    ---------------| End Task 16 |-----------
     }
 
 //    ---------------| Task 1 |---------------
@@ -197,4 +213,53 @@ public class Day14 {
             System.out.println(largest);
         }*/
 //    ---------------| End Task 12 |-----------
+
+//    ---------------| Task 13 |---------------
+        /*public static int numDigits(String str) {
+            if (str.length() <= 0) {
+                return 0;
+            }
+            int count = 0;
+            if (str.charAt(0) >= '0' && str.charAt(0) <= '9') {
+                count++;
+            }
+            return count + numDigits(str.substring(1));
+        }*/
+//    ---------------| End Task 13 |-----------
+
+//    ---------------| Task 14 |---------------
+        /*public static String pairStar(String str) {
+            if (str.length() <= 1) {
+                return str;
+            }
+            return str.charAt(0) + "*" + pairStar(str.substring(1));
+        }*/
+//    ---------------| End Task 14 |-----------
+
+//    ---------------| Task 15 |---------------
+        /*public static String addSimvol(String str, double middle) {
+//            if (middle % 2 == 0) {
+//
+//            }
+            if (str.length() <= 1) {
+                return str;
+            }else if(str.length() <= middle) {
+                return str.charAt(0) + ")" + addSimvol(str.substring(1), middle);
+            }
+            return str.charAt(0) + "(" + addSimvol(str.substring(1), middle);
+        }*/
+//    ---------------| End Task 15 |-----------
+
+//    ---------------| Task 16 |---------------
+        public static String addMiroorLine(String str) {
+            if (str.length() <= 1) {
+                return str;
+            }
+            char x = ')';
+            if(str.charAt(0) == '(') {
+                /*str.charAt(0) = x;*/
+            }
+            return addMiroorLine(str.substring(1)) + str.charAt(0);
+        }
+//    ---------------| End Task 16 |-----------
 }
