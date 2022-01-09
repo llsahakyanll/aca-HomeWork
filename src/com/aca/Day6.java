@@ -1,11 +1,13 @@
 package com.aca;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Day6 {
     public static void funcMain() {
-//    ----------------------------|~\~\ DAY 1 Home Work /~/~|--------------------------------------------------
+//    ----------------------------|~\~\ DAY 6 Home Work /~/~|--------------------------------------------------
 
 //    ----------------------------| HomeWork Task 1 |----------------------------------------------------------
         /*for (int i = 1; i <= 10 ; i++) {
@@ -99,6 +101,20 @@ public class Day6 {
         }*/
 //    ----------------------------| End HomeWork Task 9 |--------------------------------------------------------
 
+//    ----------------------------| HomeWork Task 10 |------------------------------------------------------------
+        /*int max = 32;
+        int min = 122;
+        int range = max - min + 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Array Length : ");
+        char[] array = new char[scanner.nextInt()];
+        for (int i = 0; i < array.length; i++) {
+            int i1 = (int) (Math.random() * range) + min;
+            array[i] = (char) i1;
+        }
+        System.out.println(Arrays.toString(array));*/
+//    ----------------------------| End HomeWork Task 10 |--------------------------------------------------------
+
 //    ----------------------------| HomeWork Task 11 |----------------------------------------------------------
         /*Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
@@ -120,6 +136,23 @@ public class Day6 {
             System.out.println(i);
         }*/
 //    ----------------------------| End HomeWork Task 12 |-------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 13 |------------------------------------------------------------
+        /*Scanner scanner = new Scanner(System.in);
+        double x = scanner.nextDouble();
+        double oneDay = (x * 10) / 100 + x;
+        double y = scanner.nextDouble();
+        int days = (int) (y / oneDay);
+        System.out.println(days);*/
+//    ----------------------------| End HomeWork Task 13 |--------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 14 |------------------------------------------------------------
+
+//    ----------------------------| End HomeWork Task 14 |--------------------------------------------------------
+
+//    ----------------------------| HomeWork Task 15 |------------------------------------------------------------
+//        -----| Պահանջը ? |-----
+//    ----------------------------| End HomeWork Task 15 |--------------------------------------------------------
 
 //    ----------------------------| HomeWork Task 16 |----------------------------------------------------------
         /*Scanner scanner = new Scanner(System.in);
@@ -161,9 +194,6 @@ public class Day6 {
         if (b == 0) {
             return 1;
         }
-        ;
         return a * pow(a, b - 1);
     }
-
-    ;
 }

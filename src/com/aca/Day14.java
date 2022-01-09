@@ -74,8 +74,8 @@ public class Day14 {
 //    ---------------| End Task 15 |-----------
 
 //    ---------------| Task 16 |---------------
-        String x = "sahak";
-        System.out.print(x + addMiroorLine(x));
+        /*String x = "(abc (def (g";
+        System.out.print(x + addMiroorLine(x));*/
 //    ---------------| End Task 16 |-----------
     }
 
@@ -251,15 +251,15 @@ public class Day14 {
 //    ---------------| End Task 15 |-----------
 
 //    ---------------| Task 16 |---------------
-        public static String addMiroorLine(String str) {
+        /*public static String addMiroorLine(String str) {
             if (str.length() <= 1) {
                 return str;
             }
             char x = ')';
             if(str.charAt(0) == '(') {
-                /*str.charAt(0) = x;*/
+                *//*str.charAt(0) = x;*//*
             }
             return addMiroorLine(str.substring(1)) + str.charAt(0);
-        }
+        }*/
 //    ---------------| End Task 16 |-----------
 }
